@@ -18,7 +18,7 @@ The data model is captured in the following diagram:
 - Users Table: user_id (PK)
 - Brands Table: brand_id (PK)
 - Receipts Table: receipt_id (PK), user_id (FK)
-- Receipt_Items Table: receipt_id (PK), partner_item_id (PK), brand_code (FK)
+- Receipt_Items Table: (receipt_id, partner_item_id)(PK), brand_code (FK)
 
 ## Second: Write queries that directly answer predetermined questions from a business stakeholder
 I choose Postgres as the database. The queries can be found in the 'sql' folder.

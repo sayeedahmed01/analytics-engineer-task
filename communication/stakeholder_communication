@@ -1,0 +1,25 @@
+Hi,
+
+I have completed my initial analysis of the data and wanted to share a few findings and see if you could help me answer a few questions.
+
+Starting with the brands data:
+- I noticed duplications in the ‘brandCode’ for brands like GOODNITES and HUGGIES, along with several missing values. Do you happen to have any insight into why this might be happening?
+- How should we handle cases where there are multiple entries for the same brand code? Should we drop all duplicates or is there a preferred method to identify the correct brand code?
+- Do you know what data source the ‘cpg_id’ is referring to? Would including this in our data model be useful for future requirements?
+
+Regarding the receipts data:
+- There are some receipts where the ‘purchaseDate’ occurs after the ‘createDate’. Is there a specific business logic for this that I should be aware of?
+- Additionally, the metabriteCampaign field which seems to track metrics for certain campaigns or promo events, should we keep this field for long-term analysis?
+
+For the users data, I found some duplications in user IDs and some test IDs mixed in. I’ll be reaching out to the dev team to clarify these.
+
+Lastly, as our data grows, I want to ensure we maintain good performance and scalability.
+- How often will aggregate data be queried or are there any specific timeframes we should focus on for reporting purposes?
+- It would be helpful to know about any data queries that are expected to be made available on a frequent basis.
+
+This information will help me set up efficient partitions and create views for frequent data queries.
+
+Happy to schedule a call to walk you through the issues.
+
+Thanks,
+Sayeed
